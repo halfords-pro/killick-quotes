@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Grievances — Preserved Killick</title>
+    <meta name="description" content="An archive of daily grievances from Preserved Killick, steward aboard HMS Surprise.">
+    <link rel="canonical" href="https://mybesttablecloth.com/archive.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1a120a;
+            font-family: 'IM Fell English', serif;
+            color: #2c1a0e;
+            padding: 2rem 1rem;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .card {
+            position: relative;
+            background-color: #f4ead5;
+            max-width: 640px;
+            width: 100%;
+            padding: 3rem 3rem 2.5rem;
+            text-align: center;
+            border: 3px solid #8b6914;
+            outline: 1px solid #8b6914;
+            outline-offset: 6px;
+            z-index: 1;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at top left, rgba(80, 50, 20, 0.08) 0%, transparent 50%),
+                        radial-gradient(ellipse at top right, rgba(80, 50, 20, 0.08) 0%, transparent 50%),
+                        radial-gradient(ellipse at bottom left, rgba(80, 50, 20, 0.06) 0%, transparent 50%),
+                        radial-gradient(ellipse at bottom right, rgba(80, 50, 20, 0.06) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .subtitle {
+            font-family: 'IM Fell English SC', serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #8b6914;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-family: 'IM Fell English SC', serif;
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: 0.08em;
+            color: #2c1a0e;
+            line-height: 1.2;
+            margin-bottom: 0.3rem;
+        }
+
+        .role {
+            font-style: italic;
+            font-size: 1rem;
+            color: #5a4530;
+            margin-bottom: 1.5rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #8b6914;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .fleuron {
+            font-size: 1.4rem;
+            color: #8b6914;
+            line-height: 1;
+            margin: 1rem 0;
+        }
+
+        .entries {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .entry {
+            margin-bottom: 2rem;
+        }
+
+        .entry-date {
+            font-family: 'IM Fell English SC', serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            color: #8b6914;
+            margin-bottom: 0.5rem;
+        }
+
+        .entry-quote {
+            font-style: italic;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #2c1a0e;
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 0 0.5rem;
+        }
+
+        .entry-divider {
+            font-size: 1rem;
+            color: #8b6914;
+            margin: 1.5rem 0;
+        }
+
+        .nav {
+            margin-top: 1.5rem;
+        }
+
+        .nav a {
+            font-family: 'IM Fell English SC', serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            color: #8b6914;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .nav a:hover {
+            border-bottom-color: #8b6914;
+        }
+
+        .empty {
+            font-style: italic;
+            color: #5a4530;
+            margin: 2rem 0;
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #6b5a48;
+            text-align: center;
+            font-style: italic;
+            z-index: 1;
+            position: relative;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 2rem 1.5rem 1.8rem;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .entry-quote {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <p class="subtitle">A Record of Complaints</p>
+        <h1>Previous Grievances</h1>
+        <p class="role">Steward &amp; Coxswain, H.M.S. Surprise</p>
+        <hr>
+        <div class="entries">
+            <div class="entry">
+    <p class="entry-date"><time datetime="1800-02-18">18 FEBRUARY 1800</time></p>
+    <p class="entry-quote">Which I have been aboard this ship these twenty years and never seen such wickedness, which that Madeira cost the Captain&#x27;s own money and it was decanted particular into them crystal glasses that I polished myself not two days since, and now some thieving article has... which I&#x27;ll not say who, but there&#x27;s one or two of them young gentlemen what thinks the world owes &#x27;em a living, and if his honour finds out before I&#x27;ve had time to... well, there&#x27;ll be the devil to pay and no mistake, and here&#x27;s me without so much as a by-your-leave or a thank-you-kindly for keeping of his affairs in order.</p>
+</div>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Today&rsquo;s Grievance</a>
+        </nav>
+    </main>
+    <footer>In the tradition of Patrick O&rsquo;Brian&rsquo;s Aubrey&#8211;Maturin series</footer>
+</body>
+</html>
